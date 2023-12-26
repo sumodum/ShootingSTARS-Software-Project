@@ -1,0 +1,252 @@
+:root{
+  --secondarycolor:#86A2B3;
+  --primarycolor:#E0E0E1;
+  --fontcolor:#978897; 
+  --white: #FFFFFF;
+  --hover: #2E5266;
+  --grey: #323232;
+  --onyxblack: #35393C; 
+  --sumi: #B0DDDC; 
+  --button: #42858C; 
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:500');
+
+* { 
+  box-sizing:border-box; 
+  margin:0;
+  padding:0; 
+}
+
+body {
+  /* font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  font-family:"Open Sans",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #393D3F;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+ul,li,a,button{
+  font-family:"Montserrat",sans-serif; 
+  font-weight:500;
+  font-size:16px;
+  text-decoration:none;
+  cursor: pointer;
+  list-style: none;
+}
+
+.home {
+  display:flex;
+  flex-direction: column;
+}
+
+header {
+  display:flex; 
+  justify-content: center; 
+  align-items:center; 
+  background-color: #35393C;
+  flex-direction: row;
+  padding: 30px 10%;
+}
+
+nav { 
+  display:flex;
+  flex-direction:row;
+}
+
+.nav_link{
+  list-style:none;
+}
+.nav_link li {
+  display:inline-block;
+  padding: 0px 20px; 
+}
+
+.nav_link li a {
+  transition: all 0.3s ease 0s; 
+}
+
+.nav_link li a:hover {
+  color:#0088a9;
+}
+
+.items {
+  color:#E0E0E1;
+}
+
+.logoutBtn { 
+  color:hsl(240, 2%, 88%);
+  padding-left: 50px;
+}
+
+/*HomePage*/
+.Page { 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  align-content:center;
+}
+
+/*Modules Page*/
+.ModulePage{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  background: #B0DDDC;
+  height:100vh;
+}
+.Filter { 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-top:2em;
+  padding-bottom:2em;
+}
+
+.ModuleList { 
+  overflow:auto; 
+  max-height: 400px;
+}
+.ModuleList::-webkit-scrollbar { 
+  display:none;
+}
+.indivModule:hover {
+  background-color: var(--secondarycolor);
+  cursor:pointer;
+}
+
+.PopUp { 
+  display:flex;
+  width:90%;
+}
+
+/*Home Page*/
+.Home1 { 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 3em; 
+  padding-bottom: 3em;
+  width:95%;
+}
+.currentPlan { 
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left:1em;
+  overflow:auto;
+  height:500px;
+  background-color:#B0DDDC;
+  padding:2em;
+  }
+.plannedModule { 
+  display:flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content:center;
+  width:100%;
+}
+
+.homeTimetable { 
+  width:100%;
+}
+.ImportExportField { 
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-top:2em;
+  padding-bottom:2em;
+  gap:2em;
+}
+
+.currentPlan::-webkit-scrollbar { 
+  display:none;
+}
+
+.Home2 { 
+  display:flex; 
+  flex-direction:row;
+  background-color: #B0DDDC;
+  width:100%;
+  align-items: flex-start;
+  justify-content: center;
+  padding:2em;
+}
+
+.buttonList {
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left:15em;
+}
+
+.buttonList1 { 
+  display:flex; 
+  flex-direction:row;
+}
+
+.removeBtn { 
+  background-color: var(--button) !important ;
+  color:var(--white) !important;
+  font-family:"Montserrat",sans-serif; }
+.removeBtn:hover { 
+  background-color: var(--hover) !important ;
+}
+.buttonListBtns{
+  background-color: var(--button) !important ;
+  color:var(--white) !important;
+  margin-top:2em !important;
+  font-family:"Montserrat",sans-serif !important;
+}
+
+.buttonListBtns:hover{
+  background-color: var(--hover) !important ;
+}
+
+.saveLoadBtn { 
+  background-color: var(--button) !important ;
+  color:var(--white) !important;
+  font-family:"Montserrat",sans-serif !important;
+}
+/* .saveLoadBtn:hover{
+  background-color: var(--hover) !important ;
+  color:var(--white) !important;
+} */
+
+
+
+/*Generate Timetable Page*/
+
+.generatedTimetable {
+  width:90%;
+}
+
+.GenerateTimetableButtons {
+  display:flex; 
+  align-items:center; 
+  justify-content: center;
+  gap:1em;
+  padding:2em;
+}
+
+.noTimetable{
+  display:flex; 
+  align-items: center;
+  justify-content: center;
+  padding-Top:3em;
+}
+
+

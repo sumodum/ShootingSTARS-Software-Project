@@ -1,0 +1,63 @@
+.wrongTableCell {
+	background-color: red;
+	color: white;
+}
+
+.rightTableCell {
+	background-color: white;
+
+}
+
+.divWeeklyClass {
+	height: 100%;
+	white-space: pre-wrap;
+	/*border-radius: 10px;
+	background-color: #EFBCD5;
+	margin: 0% 2%;
+	box-sizing: content-box;*/
+}
+
+.weeklyTableCell {
+	border-collapse: collapse;
+}
+
+.filledTableCell{
+	height: inherit;
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+.blankTableCell{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.weeklyTable {
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.dayRow {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.timingCol {
+	text-align:center;
+	width: 10%;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+.dayModCol {
+	width: 14%;
+}
+
+.oddTimeBG {
+	background-color: white;
+}
+
+.evenTimeBG {
+	background-color: #E0FBFC;
+}
